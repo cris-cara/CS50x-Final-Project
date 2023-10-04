@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Game Ended
+{% endblock %}
+
+{% block nav_item %}
+{% endblock %}
+
+{% block main %}
+    <script defer>
+        document.addEventListener("DOMContentLoaded", function () {
+            endgame({{ message|tojson|safe }});
+        });
+    </script>
+
+    <script src="../static/js/endgame.js"></script>
+
+{% endblock %}

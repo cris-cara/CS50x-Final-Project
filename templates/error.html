@@ -1,0 +1,19 @@
+{% extends "layout.html" %}
+
+{% block title %}
+    Error
+{% endblock %}
+
+{% block nav_item %}
+    <a class="nav-link" href="/history">History</a>
+{% endblock %}
+
+{% block main %}
+    <!-- https://memegen.link/ -->
+    <div style="text-align: center;">
+        <img alt="{{ top }}" class="align-text-center border img-fluid rounded"
+             src="https://memegen.link/custom/{{ top | urlencode }}/{{ bottom | urlencode }}.jpg?alt=https://pbs.twimg.com/tweet_video_thumb/FLQmD2vX0AoXsx6.jpg"
+             title="{{ top }}" width="650">
+    </div>
+
+{% endblock %}
